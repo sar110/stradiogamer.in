@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>N-E-C</title>
+ <style> 
+ 
+ body{
+  background-repeat: no-repeat;
+ }
+  h1{
+    color: #f3fff8;
+    font-family: fantasy;
+    font-style:italic;
+    font-size: 50px;
+    text-align: start;
+    text-shadow: 0 4px yellow;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transition: 0.5s;
+  }
+  .container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 120px;
+    background-color: black;
+    align-items: center;
+  }
+  .container a{
+    position: relative;
+    padding: 10px 15px;
+    font-size: 1.5em;
+    color:rgb(255, 6, 6);
+    text-shadow: 0 0 15px var(--clr);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transition: 0.5s;
+    border: 2px solid rgb(255, 42, 42);
+    font-family: fantasy;
+    text-align: center;
+    border-radius: 12px;
+
+  }
+  .container a :hover{
+    color: #fff;
+    border: 2px solid rgba(94, 255, 177);
+    text-shadow: var(--clr);
+  }
+  .container a::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100% ;
+    height:100% ;
+    background: var(--clr);
+    z-index: -1;
+    transform: scale(0);
+    transition: 0.5s;
+    content:'' ;
+  }
+  .container a:hover ::before{
+  transform: scale(1);
+  transition-delay: 0.5s;
+  box-shadow: 0 0 10px var(--clr),
+  0 0 30px var(--clr),
+  0 0 60px var(--clr);
+}
+h2{
+    color: #18ff84;
+    text-shadow: 4px #2dff81;
+    font-family: fantasy;
+    text-align: left;
+    margin: 0px;
+    padding: 0px;
+}
+hr{
+    color: aqua;
+}
+
+h3{
+color: #ffec42;
+    text-shadow: 2px #ffec42;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    gap: 10px;
+    font-size: 30px;
+    border-color: rgb(255, 42, 42);
+    border-radius: 12px;
+    border-width: 4px;
+    background-color: black;
+    text-shadow: 0 0 4px yellow;
+}
+span{
+  text-align: left;
+  background-color:rgb(0, 0, 0);
+  color: #18fbff;
+  text-shadow: 6px #18fbff;
+  font-family:cursive;
+  font-size: 20px;
+  border-radius: 12px;
+  border-width: 8px;
+  border-style: ridge;
+  border: 4px;
+  border-color: #ff1867;
+}
+video{
+  border: 2px;
+  border-color:#ffeeee;
+  border-radius: 4px;
+  border-width: 2px;
+  border-style: groove;
+  align-content:center
+}
+p{
+  color: #ff0059;
+  font-family: fantasy;
+  font-size: 30px;
+  margin: 2px;
+ text-shadow: #ffec42;
+ text-shadow: 2px;
+ text-align: left;
+  
+}
+p1{
+  color: rgb(6, 7, 17) ;
+}
+p3{
+  color: #000000;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+  text-align: left;
+  background-color: rgb(255, 94, 124);
+  border-radius: 2px;
+  padding: 2px;
+  margin: 4px;
+  text-shadow: 0 0 2px rgb(255, 0, 0);
+}
+p4{
+  color: #ffffff;
+  font-family: fantasy;
+  font-size: 35px;
+  text-align: left;
+  background-color: rgb(255, 48, 48);
+  border-radius: 12px;
+  padding: 2px;
+  margin: 4px;
+  border-color: #ffbf00;
+  border-width: 2px;
+  text-shadow: 0 0 8px rgb(255, 255, 3);
+
+}
+img{ 
+  border-radius: 8px;
+  margin: 2px;
+  padding: 4px;
+  width: 180px;
+  height: 160px;
+}
+footer
+{
+  background-color: rgb(27, 27, 27);
+  color: aliceblue;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: end;
+
+}
+p6{
+    position: relative;
+    padding: 16px 30px;
+    font-size: 1.5em;
+    color: #ff0059;
+    text-shadow: #18fbff 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transition: 0.5s;
+    border: 2px solid rgb(94, 255, 177);
+    font-style:italic;
+    font-family: fantasy;
+  }
+  p7{
+    color: #18ff84;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 0 0 10 aqua;
+    font-size: 16px;
+  }
+  .img img{
+    margin: 0px;
+    padding: 0px;
+    border: 2px;
+    border-color:#ff0059;
+    border-radius: 6px;
+    border-style: groove;
+  }
+  .color{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+  }
+  h4{
+    color: rgb(255, 255, 255);
+    font-family:fantasy;
+    text-shadow: 0 0 6px rgb(255, 252, 62);
+    font-size: medium;
+    padding: 2px;
+    margin: 2px;
+    font-size: 18px;
+  }
+  footer{
+    background-color: #000000;
+    color: white;
+    font-family: fantasy;
+    text-shadow: 0 0 2px #84ffeb;
+    text-align: left; 
+    margin: 0px;
+    padding: 0px;
+
+  }
+ </style>
+</head>
+<body background="gmiter.png">
+
+  <div class="color">
+  <div class="main"><hr color="aliceblue">
+ <img src="sgllogo221.jpg" align="left" > 
+ <div class="container"> 
+ <h1> Stradio Gamer <hr></h1>
+  <a href="https://www.youtube.com/@stradiogamer/featured" style="--clr:#ff1867;">Subscribe</a>
+</div>
+</div>
+</div>
+<hr color="aliceblue">
+<h3>
+  Watch The Latest One's 
+</h3>
+<hr color="aliceblue">
+
+
+<br>
+<br> <h4><font size="16px"> VIDEO'S </font> </h4>
+<br>
+<br>
+<div>
+  <br>
+<iframe width="500" height="250" src="https://www.youtube.com/embed/yifD3TeNLzc" allowfullscreen controls ></iframe>
+<br> <br> <br> 
+<p3> 
+  | My First Gameplay |
+</p3>
+<br> <br> <br>
+<iframe width="500" height="250" src="https://www.youtube.com/embed/tmlwI47xJew" allowfullscreen controls ></iframe>
+<br> <br> <br>
+<p3>
+| Green Hell Gameplay |
+</p3>
+<br> <br> <br>
+</div>
+<div class="img">
+<p4> Community </p4> 
+<br>
+<br>
+<img src="sgllogo221.jpg" width="900">
+<br>
+<hr color="aliceblue">
+</div>
+<footer>
+  <br>
+  <br>
+ <font size="4px">| Thanks For Visiting Our Site |</font>
+ <br>
+ <br>
+ <hr color="aliceblue">
+</footer>
+</body>
+</html>
